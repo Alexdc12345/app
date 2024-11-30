@@ -4,6 +4,10 @@
     "slug": "messaging",
     "version": "1.0.0",
     "orientation": "portrait",
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -19,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.peculiarnickname.messaging"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2ad86d10-c73c-469c-abc6-63e8444efab4"
+      }
+    },
+    "owner": "peculiarnickname"
   }
 }
